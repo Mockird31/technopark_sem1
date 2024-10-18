@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ask question</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+
+                <a class="navbar-brand ms-5" href="index.html">
+                    <div class="navbar-name fs-2">AskMe</div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="d-flex flex-grow-1 ms-5" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <i class="fas fa-search"></i> 
+                        </button>
+                    </div>
+                    <button class="btn btn-outline-success ms-5 me-5 btn w-50" type="submit">Ask question</button>
+                </form>
+
+                <div class="d-flex gap-1 me-3">
+                    <img src="../static/img/common_member.png" alt="Avatar" class="img-fluid" style="height: 50px;">
+                    <div>
+                        <div>
+                            Member
+                        </div>
+                        <a href="login.html">Log in</a>
+                        <a href="signup.html">Register</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-3">
+        <div class="d-flex gap-3 align-items-center">
+            <h1>New Question:</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                <div class="d-flex flex-column gap-3">
+                    
+                    <div class="d-flex align-items-start mt-3 me-5">
+                        <span class="text-danger">Too much tags</span>
+                    </div>
+
+                    <div class="d-flex align-items-start mt-3 me-5">
+                        <label for="questionText" class="me-5">Title:</label>
+                        <input type="text" class="form-control w-75" id="questionText" placeholder="Enter title here" maxlength="50">
+                    </div>
+
+                    <div class="d-flex align-items-start mt-3 me-5">
+                        <label for="questionText" class="me-5">Text:</label>
+                        <textarea class="form-control w-75" id="questionText" rows="11" placeholder="Enter your question here" style="resize: none;" maxlength="500"></textarea>
+                    </div>
+
+                    <div class="d-flex align-items-start mt-3 me-5" style="margin-left: -8px;">
+                        <label for="tags" class="me-5">Tags:</label>
+                        <input type="text" class="form-control w-75" id="tags" placeholder="Enter tags here">
+                    </div>
+                    
+                    <div class="d-flex align-items-start mt-3" style="margin-left: 85px;">
+                        <button type="button" class="btn btn-outline-success d-flex align-items-center like-button">ASK!</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <section class="mb-3">
+                    <h2>Popular Tags</h2>
+                    <div>
+                        <span class="badge text-bg-primary"><a href="#" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">Primary</a></span>
+                        <span class="badge text-bg-secondary"><a href="#" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">Secondary</a></span>
+                        <span class="badge text-bg-success"><a href="#" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">Success</a></span>
+                        <span class="badge text-bg-danger"><a href="#" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">Danger</a></span>
+                        <span class="badge text-bg-dark"><a href="#" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">Dark</a></span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Best members</h2>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+
+</html>
